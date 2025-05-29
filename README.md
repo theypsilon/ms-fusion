@@ -8,7 +8,7 @@ It comes in the form of a compact image that you can download and flash onto an 
 
 When you put this SD card into your DE10-nano and start it up, it will expand the card to its full capacity and install a basic MiSTer setup. This will be familiar to anyone who's worked with a Raspberry Pi before.
 
-From there, using the built-in scripts, you can configure WiFi (or use Ethernet out of the box) and run the standard [MiSTer Downloader script](https://github.com/MiSTer-devel/Downloader_MiSTer) to get an up to date MiSTer installation.
+From there, using the built-in scripts, you can configure WiFi (or use Ethernet out of the box) and run [Update All](https://github.com/theypsilon/Update_All_MiSTer) to get an up to date MiSTer installation.
 
 You can provide custom WiFi and Samba configuration which Ms. Fusion will install alongside the basic MiSTer setup.
 
