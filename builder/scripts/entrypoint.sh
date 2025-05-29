@@ -1,5 +1,6 @@
 #!/bin/bash
-# Copyright 2024 Michael Smith <m@hacktheplanet.be>
+# Copyright 2025 José Manuel Barroso Galindo <theypsilon@gmail.com> - fork maintainer
+# Copyright 2024 Michael Smith <m@hacktheplanet.be> - original author
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License version 3 as published
@@ -24,16 +25,16 @@ fi
 echo "Building SD card image with ${MISTER_RELEASE}..."
 
 # Create the SD card image container
-dd if=/dev/zero of=/files/images/mr-fusion.img bs=12M count=10
+dd if=/dev/zero of=/files/images/ms-fusion.img bs=12M count=10
 
 # Partition the SD card image
-sfdisk --force /files/images/mr-fusion.img << EOF
+sfdisk --force /files/images/ms-fusion.img << EOF
 start=10240, type=0b
 start=2048, size=8192, type=a2
 EOF
 
 # Attach the SD card image to a loopback device
-losetup -fP /files/images/mr-fusion.img
+losetup -fP /files/images/ms-fusion.img
 
 # Install the bootloader
 dd if="/files/vendor/bootloader.img" of="/dev/loop0p2" bs=64k
@@ -79,4 +80,4 @@ losetup -d /dev/loop0
 
 # Rename and compress the SD card image
 cd /files/images
-zip -m mr-fusion-$(date +"%Y-%m-%d").img.zip mr-fusion.img
+zip -m ms-fusion-$(date +"%Y-%m-%d").img.zip ms-fusion.img

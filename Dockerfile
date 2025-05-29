@@ -1,4 +1,5 @@
-# Copyright 2024 Michael Smith <m@hacktheplanet.be>
+# Copyright 2025 José Manuel Barroso Galindo <theypsilon@gmail.com> - fork maintainer
+# Copyright 2024 Michael Smith <m@hacktheplanet.be> - original author
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License version 3 as published
