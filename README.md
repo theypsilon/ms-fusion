@@ -61,7 +61,7 @@ The [MiSTer Downloader script](https://github.com/MiSTer-devel/Downloader_MiSTer
 
 ### Adding more scripts
 
-You can add more scripts if necessary: After you have flashed your SD card and before you move it over to the DE10-nano, re-insert it into your computer. A new drive called `MSFUSION` will appear. In it is a `Scripts` folder. Put any script you want to have available in your MiSTer in this folder. It will be copied to your MiSTer's Scripts folder automatically during the installation.
+You can add more scripts if necessary: After you have flashed your SD card and before you move it over to the DE10-nano, re-insert it into your computer. A new drive called `MRFUSION` will appear. In it is a `Scripts` folder. Put any script you want to have available in your MiSTer in this folder. It will be copied to your MiSTer's Scripts folder automatically during the installation.
 
 ## Custom WiFi configuration (optional)
 
